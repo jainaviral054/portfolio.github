@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header><H1> Aviral Jain</H1>
+        </header>
+
+        <main>
+        <section id="projects">
+            <textarea id="code-text" readonly></textarea>
+          </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I Complted B.Tech CSE From SRGI Jhansi. I  interest in software and game development. I enjoy experimenting with programming languages such as Html,Css,Python,SQL & C# and have a passion for exploring new technologies and creating innovative software solutions.</p>
+      </section>
+      <section id="Education">
+<h2>Education</h2>
+<p>Class X – Passed class X in 2010 from State Board.</p>
+<p>Class XII – Passed class XII in 2012 from State Board.</p>
+<p>Graduation – Passed B.Tech (Computer Science Engineering) in 2016 from AKTU Lucknow.</p>
+ </section>
+ <section id="Work Experince">
+<h2>Work Experince</h2>
+<h4><p>DATA ANALYST INTERN</p></h4>
+<p>Unified Mentor 2024-06 : 2024-08</p>
+<p>Technical Skills: Proficiency In Data Analysis Tools And Software (E.g.,
+SQL, Excel, R, Python). Statistical Knowledge: Understanding Of Statistical
+Methods And Their Application In Data Analysis. Data Visualization: Ability
+To Create Clear And Effective Visualizations Using Tools Like Tableau,
+Power BI, Or Similar. Analytical Thinking: Strong Problem-Solving Skills
+And The Ability To Think Analytically. Communication Skills: Ability To
+Explain Complex Data Insights To Non-Technical Stakeholders Clearly And
+Concisely. Attention To Detail: High Level Of Accuracy And Attention To
+Detail In Data Processing And Analysis.</p>
+<h4>COMPUTER INSTRUCTOR / LAB INCHARGE</h4>
+<p>Kendriya Vidyalaya Sangathan 2020-02 : 2024-05</p>
+<p>Technical Proficiency: In-Depth Knowledge Of Computer Science,
+Programming Languages (E.g., Python, Java, C++), Software Applications,
+And Hardware. Teaching Skills: Ability To Explain Complex Concepts In A
+Simple And Understandable Manner. Communication: Strong Verbal And
+Written Communication Skills. Patience And Adaptability: Patience In
+Dealing With Students Of Varying Skill Levels And The Ability To Adapt
+Teaching Methods To Meet Diverse Needs.</p>
+
+ <section id="Soft Skill">
+<h2>Soft Skill</h2>
+<ul><li><p> Communication</p></li>
+ <li><p>Team Work</p></li>
+ <li><p>Problem Solving</p></li>
+ <li><p>Creativity</p></li></ul>
+ <section id="Technical Skills">
+<h2>Technical Skills</h2>
+<ul><li>Python</li>
+<li>SQL</li>
+<li>Html</li>
+<li>Css</li>
+<li>Power BI</li>
+<li>Data Analyst Intern</li>
+<li>Exploring Data Science</li></ul>
+ <section id="Project">
+<h2>Project</h2>
+<h3>PROJECT:-Bank Loan Default Risk Analysis</h3>
+<p>OVERVIEW:-Thisprojectaimstodevelopabasicunderstandingofriskanalyticsinbanking </p>
+<p>andfinancialservices and understand how data is used to minimize the risk of losing </p>
+<p>money whilelendingtocustomers.</p>
+<p>TECHNOLOGIESUSED:-Python,EDA,DataVisualization,DataCl</p>
+<section id="Certificate">
+<h2>Certificate</h2>
+<p>Full stack web Development Course from Udemy</p>
+<p>Data Analyst Course from Udemy </p>
+
+<section id="Contact us">
+<h2>Contact us</h2>
+<p><h4>Mobile No </h4>9260903360</p>
+<p><h4>Email id </h4>jainaviral054@gmail.com</p></section>
+
+            <section>
+              <h2><a href="https://www.linkedin.com/in/jainaviral054/">Linkedin</a></h2>
+             
+                <h2><a href="https://github.com/jainaviral054">GitHub</a></h2>
+                
+            </section>
+    
+    </main>
+    <footer>
+      <p>Copyright &copy; 2024</p>
+    </footer>
+    <script>
+      const textarea = document.getElementById("code-text");
+      const code = `Hi My name is Aviral Jain. \nLooking a new job opportunity.\n in Software Development/Web Developer/ Data Analyst`;
+      let i = 0;
+
+      const typeCode = setInterval(() => {
+        textarea.value += code[i];
+        i++;
+        if (i >= code.length) {
+          clearInterval(typeCode);
+          setTimeout(removeCode,2000);
+        }
+      }, 50);
+
+      function removeCode() {
+        const deleteCode = setInterval(() => {
+            textarea.value = textarea.value.slice(0, -1);
+            if (textarea.value.length === 0) {
+              clearInterval(deleteCode);
+              textarea.classList.add("fade-out");
+        setTimeout(() => {
+          textarea.style.display = "none";
+        }, 1000);
+      }
+    }, 50);
+  }
+
+      </script>
+  </body>
+</html>
